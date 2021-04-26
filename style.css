@@ -1,3 +1,37 @@
-h1 {
-    color: goldenrod;
+nav {
+    height: 5vh;
 }
+
+#hero {
+    height: 95vh;
+}
+
+
+.typewriter {
+    height: 95vh;
+    display: flex;
+}
+
+.typewriter h1 {
+    color: #000;
+    height: 1.2em;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+      typing 1s steps(20, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0% }
+    to { width: 181px}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000 }
+  }  
