@@ -21,14 +21,14 @@ nav {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: auto; /* Gives that scrolling effect as the typing happens */
     animation: 
-      typing 1s steps(20, end),
+      typing 1.2s steps(16, end),
       blink-caret 1s step-end infinite;
   }
   
   /* The typing effect */
   @keyframes typing {
-    from { width: 0% }
-    to { width: 181px}
+    from { width: 200px}
+    to { width: 420px}
   }
   
   /* The typewriter cursor effect */
