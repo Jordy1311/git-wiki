@@ -1,12 +1,13 @@
 nav {
-    height: 5vh;
+  opacity: .97;
 }
 
-#hero {
-    height: 95vh;
+#start {
+    height: 100vh;
 }
 
 
+/*  TYPEWRITER EFFECT */
 .typewriter {
     height: 95vh;
     display: flex;
