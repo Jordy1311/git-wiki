@@ -36,3 +36,17 @@ nav {
     from, to { border-color: transparent }
     50% { border-color: #000 }
   }  
+
+  #workings-description {
+    width: 60%;
+  }
+
+  #workings-diagram {
+    width: 40%;
+    border: 2px solid #000;
+    border-radius: 5px;
+  }
+
+  #workings-diagram p {
+    width: 50%;
+  }

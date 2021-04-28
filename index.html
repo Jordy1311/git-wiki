@@ -51,7 +51,8 @@
 
   <section id="whwhwh" class="container">
     <h3>Wh, wh and wh?</h3>
-    <p>Git is software that is used for tracking changes in any set of files but is mostly used by programmers who are collaboratively developing code. It aims increase speed of development while maintaining data integrity.<br><br>It was created by Finnish-American software engineer <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a>, with contributions from other kernel developers, in 2005 for the development of the Linux kernel. Since 2005, Junio Hamano has been the core maintainer of Git.<br><br>As with most other distributed version control systems, and unlike most client–server systems, every Git directory on every computer is a full-fledged repository with complete history and full version-tracking abilities, independent of network access or a central server. Git is free and open-source software (i.e.: openly shared to use or change).<br><br> Based on the read-me file included with the source code, the name Git can mean:
+    <p>
+      Git is officially defined as a distributed version control system (VCS).<br><br>In other words, it's a system that tracks changes to project files over time. It enables the user to record project changes and go back to a specific version of the tracked files at any given point in time.  This system can be used by many people to efficiently work together and collaborate on team projects, where each person can have their own version of the project distributed on their computer. Later on, these individual versions of the project can be merged and adapted into the main version of the project. This aims to increase speed of development while maintaining all files' integrity.<br><br>Git was created in 2005 by Finnish-American software engineer <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank">Linus Torvalds</a>, with contributions from other kernel developers, for the development of the Linux kernel. Since 2005, Junio Hamano has been the core maintainer of Git.<br><br> Based on the read-me file included with the source code of Git, the name can mean:
     </p>
     <ul>
       <li>nothing, just a random three-letter conbination that is pronouncable.</li>
@@ -64,11 +65,11 @@
 
   <section id="design" class="container">
     <h3>Design Characteristics</h3>
-    <p>Git's design was inspired by <a href="https://en.wikipedia.org/wiki/BitKeeper" target="_blank">BitKeeper</a> and <a href="https://en.wikipedia.org/wiki/Monotone_(software)" target="_blank">Monotone</a>. Git was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as <a href="https://en.wikipedia.org/wiki/Cogito_(software)" target="_blank">Cogito</a>.</p>
+    <p>Git's design was inspired by <a href="https://en.wikipedia.org/wiki/BitKeeper" target="_blank">BitKeeper</a> and <a href="https://en.wikipedia.org/wiki/Monotone_(software)" target="_blank">Monotone</a> - alternative VSCs. It was originally designed as a low-level version-control system engine, on top of which others could write front ends, such as <a href="https://en.wikipedia.org/wiki/Cogito_(software)" target="_blank">Cogito</a>.</p>
     <h5>Strong support for non-linear development:</h5>
-    <p>Git supports branching and merging and includes specific tools for visualising and navigating development history. A core assumption is that a change will be merged more often than it is written, as it is passed around to various reviewers.</p>
+    <p>Git supports branching and merging and includes specific tools for visualising and navigating change history. A core assumption is that a change will be merged more often than it is written, as it is passed around to various reviewers.</p>
     <h5>Distributed development:</h5>
-    <p>Git gives each developer a local copy of the full development history and changes are copied from one such repository to another.</p>
+    <p>Git gives each developer a local copy of the full change history and changes are copied from one such repository to another.</p>
     <h5>Compatibility with existent systems:</h5>
     <p>Repositories can be published via HTTP (<a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">Hypertext Transfer Protocol</a>), FTP (<a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank">File Transfer Protocol</a>) or a Git protocol over either a plain socket or ssh (<a href="https://en.wikipedia.org/wiki/Secure_Shell_Protocol" target="_blank">Secure Shell Protocol</a>) which means files are highly compatible.</p>
     <h5>Efficient handling of large projects:</h5>
@@ -78,25 +79,26 @@
     <br>
   </section>
 
-  <section id="workings" class="container">
+  <section id="workings" class="container d-flex">
+    <div id="workings-description"> 
     <h3>How it works:</h3>
-    <p>There are a few ways to start but put basically someone needs to create a local directory and initialise Git. This will create additional files within the directory used to log changes for Git to reference. They will then create a remote repository on a server or hosting service and link the two. After creating initial files in the local directory they will commit them and push the commit(s) to the remote.
-      
-     The repository may have files already in it or it may start out completely empty. Everyone who works on the rep</p>
-
-    <h5>Main/Master:</h5>
-    <p>This is the core directory including the files with changes that have been agreed upon. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review.</p>
-    <h5>Branches and Checking-out:</h5>
-    <p>This is what a branch is and what making one means. Checking out is what you do when you effectivley "jump" onto the created branch</p>
-    <h5>Tracked/Untracked Changes:</h5>
-    <p>This is what tracked and untracked changes are</p>
-    <h5>Commits:</h5>
-    <p>This is what a commit is</p>
-    <h5>Push requests:</h5>
-    <p>This is what a push request is and what happens at this stage</p>
-    <h5>Merges:</h5>
-    <p>This is what a merge is</p>
-    <br>
+      <h5 id="main-heading">Main/Master:</h5>
+      <p>This is the core directory including the files with changes that have been agreed upon. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review.</p>
+      <h5 id="branches-heading">Branches and Checking-out:</h5>
+      <p>This is what a branch is and what making one means. Checking out is what you do when you effectivley "jump" onto the created branch</p>
+      <h5 id="tracked-heading">Tracked/Untracked Changes:</h5>
+      <p>This is what tracked and untracked changes are</p>
+      <h5 id="commits-heading">Commits:</h5>
+      <p>This is what a commit is</p>
+      <h5 id="push-heading">Push requests:</h5>
+      <p>This is what a push request is and what happens at this stage</p>
+      <h5 id="merges-heading">Merges:</h5>
+      <p>This is what a merge is</p>
+      <br>
+    </div>
+    <div id="workings-diagram" class="d-flex justify-content-center align-items-center">
+      <p>Diagram that highlights sections when titles <-- are hovered over. Should be able to use css to make those sections highlight? Otherwise .js would be totally fine</p>
+    </div>
   </section>
 
   <section id="advanced" class="container">
