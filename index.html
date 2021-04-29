@@ -81,16 +81,17 @@
 
   <section id="workings" class="container">
     <h3>How it works:</h3>
-    <p class="mb-2">Projects are stored in repositories, which is just a container for project files with a few extra text files that are responsible for keeping track changes.</p>
+    <p class="mb-2">Projects are stored in repositories, which is just a container for project files with a few extra text files that are responsible for keeping track of changes.</p>
     <p class="mb-2">There are two types of repositories:</p>
     <ul>
       <li class="mb-2"><b>Local repository</b> - this is one that is stored on one's own device and is generally linked to a remote. Any changes that are made to files stored on a local repository will not automatically reflect on the linked remote repository. This creates a development environment where users can make changes without having worry that their changes will negatively impact stable files which are stored on the remote. Likewise, changes that are made to the remote are not automatically reflected on one's own local repository, therefore, the remote needs to be <i>"pulled"</i> which updates the local to the same state as remote.</li>
       <li class="mb-4"><b>Remote repository</b> - this is one that is stored on a server and is generally accessable to many people. In a project which involves many people, changes to these files should, in theory, only happen after someone has submitted the changes for review and they have been approved and merged. This is the aspect of Git that ensures integrity of files by making sure no one is responsible for changes.</li>
     </ul>
-    <div class="d-flex">
+    <div class="d-flex align-items-center">
       <div id="workings-description">  
-        <h5 id="main-heading">Main/Master:</h5>
-        <p>This is the set of files located on the remote or the files that are pulled off of the remote. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review, instead you would make changes on another branch.</p>
+        <h3>Common terms & actions:</h3>
+        <h5 id="main-heading">Main (Master):</h5>
+        <p>This is the set of files located on the remote or the files that are pulled off of the remote. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review, instead you would make changes on another branch and merge them into main after review.</p>
         <h5 id="pulling-heading">Pulling</h5>
         <p>Is the act of updating your local repository with the remote repository.</p>
         <h5 id="branches-heading">Branches and Checking-out:</h5>
@@ -105,14 +106,14 @@
         <p>Once changes have been reviewed and approved by reviewers, <b>merging</b> is the next step. It takes the branch and combines it with main, making sure that any conflicts (places where code on both of the brances are different) are addressed. In simple cases, Github is able to deal with conflicts automatically, however, in more complex cases a <i>"merge-conflict"</i> may occur which will require user review to ensure code from both branches works as intended.</p>
         <br>
       </div>
-      <div id="workings-diagram" class="d-flex justify-content-center align-items-center">
+      <div id="workings-diagram" class="ml-4 diagram d-flex justify-content-center align-items-center">
         <p>Diagram that highlights sections when titles <-- are hovered over. Should be able to use css to make those sections highlight? Otherwise .js would be totally fine</p>
       </div>
     </div>
   </section>
 
   <section id="additional" class="container">
-    <h3>Additional actions:</h3>
+    <h3>Less common actions:</h3>
     <h5>Stashing:</h5>
     <p>This is a function that allows you to temporarily save your changes without applying them to your project.</p>
     <h5>Merge conflicts:</h5>
@@ -131,7 +132,7 @@
     <ul>
       <li><b>Git</b> - Is the name of the software as described above.</li>
       <li><b>Repository</b> - A directory that stores files. A container in a sense.</li>
-      <li><b>Master/Main</b> - Is the main branch that stores all merged branches/initial/approved files.</li>
+      <li><b>Main (Master)</b> - Is the main branch that stores all merged branches/initial/approved files.</li>
       <li><b>Branch</b> - User created copy of master/main that allows the user to make changes without directly changing master/main.</li>
       <li><b>Checkout</b> - The act of changing branches.</li>
       <li><b>Tracked/Untracked</b> - Whether or not Git has history of a particular file.</li>
