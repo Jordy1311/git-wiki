@@ -79,25 +79,35 @@
     <br>
   </section>
 
-  <section id="workings" class="container d-flex">
-    <div id="workings-description"> 
+  <section id="workings" class="container">
     <h3>How it works:</h3>
-      <h5 id="main-heading">Main/Master:</h5>
-      <p>This is the core directory including the files with changes that have been agreed upon. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review.</p>
-      <h5 id="branches-heading">Branches and Checking-out:</h5>
-      <p>This is what a branch is and what making one means. Checking out is what you do when you effectivley "jump" onto the created branch</p>
-      <h5 id="tracked-heading">Tracked/Untracked Changes:</h5>
-      <p>This is what tracked and untracked changes are</p>
-      <h5 id="commits-heading">Commits:</h5>
-      <p>This is what a commit is</p>
-      <h5 id="push-heading">Push requests:</h5>
-      <p>This is what a push request is and what happens at this stage</p>
-      <h5 id="merges-heading">Merges:</h5>
-      <p>This is what a merge is</p>
-      <br>
-    </div>
-    <div id="workings-diagram" class="d-flex justify-content-center align-items-center">
-      <p>Diagram that highlights sections when titles <-- are hovered over. Should be able to use css to make those sections highlight? Otherwise .js would be totally fine</p>
+    <p class="mb-2">Projects are stored in repositories, which is just a container for project files with a few extra text files that are responsible for keeping track changes.</p>
+    <p class="mb-2">There are two types of repositories:</p>
+    <ul>
+      <li class="mb-2"><b>Local repository</b> - this is one that is stored on one's own device and is generally linked to a remote. Any changes that are made to files stored on a local repository will not automatically reflect on the linked remote repository. This creates a development environment where users can make changes without having worry that their changes will negatively impact stable files which are stored on the remote. Likewise, changes that are made to the remote are not automatically reflected on one's own local repository, therefore, the remote needs to be <i>"pulled"</i> which updates the local to the same state as remote.</li>
+      <li class="mb-4"><b>Remote repository</b> - this is one that is stored on a server and is generally accessable to many people. In a project which involves many people, changes to these files should, in theory, only happen after someone has submitted the changes for review and they have been approved and merged. This is the aspect of Git that ensures integrity of files by making sure no one is responsible for changes.</li>
+    </ul>
+    <div class="d-flex">
+      <div id="workings-description">  
+        <h5 id="main-heading">Main/Master:</h5>
+        <p>This is the set of files located on the remote or the files that are pulled off of the remote. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review, instead you would make changes on another branch.</p>
+        <h5 id="pulling-heading">Pulling</h5>
+        <p>Is the act of updating your local repository with the remote repository.</p>
+        <h5 id="branches-heading">Branches and Checking-out:</h5>
+        <p>A <b>branch</b> can be seen as an individual timeline of the project. With Git, you can create mutiple branches that allow you to add new (experimental, unfinished and/or potentially buggy) features in a seperate environment which can be submitted to others for review. Another member of a team could also create another branch off your branch in order to build on your ideas which adds a lot of thickness and complexity. Users can only be on one branch at a time. Switching branches will update your local repository from the files on the current branch to the files on the new branch. The act of changing branches is called <i>"<b>checking out</b> **branch-x**"</i>.</p>
+        <h5 id="tracked-heading">Tracked/Untracked Changes:</h5>
+        <p><b>Tracked</b> changes are to files that were originally on the main/master branch. <b>Untracked</b> changes are files that are new to the project that Git has no record of.</p>
+        <h5 id="staging-heading">Staging & Commits:</h5>
+        <p>The staging area is an imaginary somewhere you can put changes before commiting them. This allows you to commit multiple changes that are related which helps clarify & classify a lot of work. <b>Staging</b> is the act of putting a change into this area. <b>Committing</b> is the act of recording a snapshot of the code as a whole (including changes that were staged).</p>
+        <h5 id="pull-heading">Pull requests:</h5>
+        <p>Note: this is different to pulling! <b>Pull requests</b> are a function of Github (a Git repository hosting service) that opens a ticket which details commits, files within those commits and differences (diffs) of those files if they were tracked, for the use of peer review. It allows one to request review of and communicate about changes that have been made.</p>
+        <h5 id="merges-heading">Merges:</h5>
+        <p>Once changes have been reviewed and approved by reviewers, <b>merging</b> is the next step. It takes the branch and combines it with main, making sure that any conflicts (places where code on both of the brances are different) are addressed. In simple cases, Github is able to deal with conflicts automatically, however, in more complex cases a <i>"merge-conflict"</i> may occur which will require user review to ensure code from both branches works as intended.</p>
+        <br>
+      </div>
+      <div id="workings-diagram" class="d-flex justify-content-center align-items-center">
+        <p>Diagram that highlights sections when titles <-- are hovered over. Should be able to use css to make those sections highlight? Otherwise .js would be totally fine</p>
+      </div>
     </div>
   </section>
 
