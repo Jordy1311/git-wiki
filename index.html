@@ -113,14 +113,16 @@
 
   <section id="additional" class="container">
     <h3>Additional actions:</h3>
-    <h5>Merge conflicts:</h5>
-    <p>Merge conflicts are intimidating things but if you take your time with them they shouldn't be too bad!</p>
-    <h5>Rebase:</h5>
-    <p>What rebasing is is a good question</p>
     <h5>Stashing:</h5>
-    <p>Stashing is saving some unstaged changes for a little later</p>
-    <h5>Log:</h5>
-    <p>Stashing is saving some unstaged changes for a little later</p>
+    <p>This is a function that allows you to temporarily save your changes without applying them to your project.</p>
+    <h5>Merge conflicts:</h5>
+    <p>This is where a merge has been attempted but Git was unable to understand and resolve differences between new changes on the branch being merged and already commited work on the main branch.</p>
+    <h5>Rebase:</h5>
+    <p>This is where you change the base of your branch from one commit on main to another making it appear as if you'd created your branch from a different commit from the start.</p>
+    <h5><code>&lt;git status&gt;</code></h5>
+    <p>Calling this will display which branch you are on, the changed files that are yet to be staged in red and whether they are tracked or untracked and the changed files that are in staging and yet to be commited in green.</p>
+    <h5><code>&lt;git log&gt;</code></h5>
+    <p>Git log will show you a list of all previous commits down from the current branch. Note: it will not include any commits that are on parellel branches just once previous to the current branch. In each commit listing it will detail the author, date and time,and the title of the commit.</p>
     <br>
   </section>
 
