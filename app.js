@@ -1,15 +1,16 @@
 // GET ELEMENTS
 let diagramTextArea = document.getElementById('workings-description')
+let workingsDiagram = document.getElementById('workings-diagram-text')
 
 let headingMouseOver = function(e) {
     if(e.target.id.includes('heading')) {
-        e.target.style.color = '#FFD300';
+        workingsDiagram.textContent += e.target.textContent
     }
 }
 
 let headingMouseOut = function(e) {
     if(e.target.id.includes('heading')) {
-        setTimeout(function() {e.target.style.color = '#000';}, 700)
+        workingsDiagram.textContent = 'computer:~'
     }
 }
 

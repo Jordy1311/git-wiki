@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-
 }
 
 :target:before {
@@ -15,7 +14,7 @@ nav {
 }
 
 #start {
-  height: 103vh;
+  height: 95vh;
 }
 
 
@@ -37,6 +36,17 @@ nav {
     blink-caret 1s step-end infinite;
 }
 
+.typewriter p {
+  color: #fff;
+  height: 1.5em;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 
+    typing-p 1.2s steps(16, end),
+    blink-caret-p 1s step-end infinite;
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 200px}
@@ -49,6 +59,20 @@ nav {
   50% { border-color: #000 }
 }  
 
+/* The typing effect */
+@keyframes typing-p {
+  from { width: 200px}
+  to { width: 420px}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret-p {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}  
+
+
+/*  WORKINGS DIAGRAM */
 #workings-description {
   width: 60%;
 }
@@ -58,14 +82,13 @@ nav {
   height: 80vh;
   border: 2px solid #000;
   border-radius: 5px;
+
+  background-color: #000;
 }
 
-#workings-diagram p {
-  width: 50%;
-}
-
-@media (min-width: 550px) {
+/*  REMOVES EXAMPLE ON SMALL SCREEN */
+/* @media (min-width: 550px) {
   #workings-diagram {
-    border: 5px solid pink;
+    border: 5px solid red;
   }
-}
+} */
