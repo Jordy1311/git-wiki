@@ -1,9 +1,21 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 70px;
+  margin: -70px 0 0;
+}
+
 nav {
   opacity: .97;
 }
 
 #start {
-  height: 100vh;
+  height: 103vh;
 }
 
 
