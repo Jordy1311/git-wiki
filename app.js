@@ -1,14 +1,14 @@
-// GET ELEMENTS
+// DIAGRAM TYPEWRITER EFFECT
 let diagramTextArea = document.getElementById('workings-description')
 let workingsDiagram = document.getElementById('workings-diagram-text')
 
-let headingMouseOver = function(e) {
+let headingMouseOver = (e) => {
     if(e.target.id.includes('heading')) {
         workingsDiagram.textContent += e.target.textContent
     }
 }
 
-let headingMouseOut = function(e) {
+let headingMouseOut = (e) => {
     if(e.target.id.includes('heading')) {
         workingsDiagram.textContent = 'computer:~'
     }
@@ -16,6 +16,3 @@ let headingMouseOut = function(e) {
 
 diagramTextArea.addEventListener('mouseover', headingMouseOver);
 diagramTextArea.addEventListener('mouseout', headingMouseOut);
-
-// SCROLLSPY
-$('body').scrollspy({target: '#main-nav'});
