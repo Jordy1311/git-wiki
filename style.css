@@ -14,7 +14,7 @@ nav {
 }
 
 #start {
-  height: 95vh;
+  height: 105vh;
 }
 
 
@@ -78,17 +78,26 @@ nav {
 }
 
 #workings-diagram {
-  width: 40%;
-  height: 80vh;
   border: 2px solid #000;
   border-radius: 5px;
+
+  margin: auto;
+  padding-left: 5px;
 
   background-color: #000;
 }
 
+#spacer {
+  width: 30%;
+  height: 80vh;
+}
+
 /*  REMOVES EXAMPLE ON SMALL SCREEN */
-/* @media (min-width: 550px) {
+@media (max-width: 768px) {
   #workings-diagram {
-    border: 5px solid red;
+    display: none;
   }
-} */
+  #workings-description {
+    width: 100%;
+  }
+}

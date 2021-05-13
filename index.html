@@ -10,14 +10,14 @@
 </head>
 
 <body data-bs-spy="scroll">
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top px-3">
+  <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top px-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">git_wiki</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav nav me-auto">
+        <ul class="navbar-nav nav ms-auto">
           <li class="nav-item">
             <a class="nav-link"  href="#start">Start</a>
           </li>
@@ -25,13 +25,10 @@
             <a class="nav-link"  href="#whwhwh">Wh, wh and wh?</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#design">Design</a>
+            <a class="nav-link"  href="#design">Design Characteristics</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"  href="#workings">How it works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"  href="#additional">Terms and actions</a>
           </li>
           <li class="nav-item">
             <a class="nav-link"  href="#definitions">Definitions</a>
@@ -46,9 +43,7 @@
           <h1>computer:~ git --help!?</h1>
       </div>
   </section>
-
-  <br><br>
-
+  
   <section id="whwhwh" class="container-md">
     <h3>Wh, wh and wh?</h3>
     <p>
@@ -89,7 +84,7 @@
     </ul>
     <div class="d-flex align-items-center">
       <div id="workings-description">  
-        <h3>Common terms & actions:</h3>
+        <h4>Common terms & actions:</h4>
         <h5 id="main-heading">Main (Master):</h5>
         <p>This is the set of files located on the remote or the files that are pulled off of the remote. If you are collborating with other developers and wanting to make changes or additions to the directory, you wouldn't usually make these changes or additions directly to the main/master as it means they will have no opportunity for review, instead you would make changes on another branch and merge them into main after review.</p>
         <h5 id="pulling-heading">Pulling</h5>
@@ -104,16 +99,14 @@
         <p>Note: this is different to pulling! <b>Pull requests</b> are a function of Github (a Git repository hosting service) that opens a ticket which details commits, files within those commits and differences (diffs) of those files if they were tracked, for the use of peer review. It allows one to request review of and communicate about changes that have been made.</p>
         <h5 id="merges-heading">Merges:</h5>
         <p>Once changes have been reviewed and approved by reviewers, <b>merging</b> is the next step. It takes the branch and combines it with main, making sure that any conflicts (places where code on both of the brances are different) are addressed. In simple cases, Github is able to deal with conflicts automatically, however, in more complex cases a <i>"merge-conflict"</i> may occur which will require user review to ensure code from both branches works as intended.</p>
-        <br>
       </div>
-      <div id="workings-diagram" class="typewriter">
-        <p id="workings-diagram-text" class="ml-1">computer:~</p>
+      <div id="spacer sticky-top">
+        <div id="workings-diagram" class="typewriter">
+          <p id="workings-diagram-text" class="ml-1">computer:~</p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <section id="additional" class="container-md">
-    <h3>Less common actions:</h3>
+    <h4>Less common actions:</h4>
     <h5>Stashing:</h5>
     <p>This is a function that allows you to temporarily save your changes without applying them to your project.</p>
     <h5>Merge conflicts:</h5>
