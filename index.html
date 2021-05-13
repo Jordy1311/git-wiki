@@ -10,34 +10,26 @@
 </head>
 
 <body>
-  <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <nav id="main-nav" class="navbar navbar-expand navbar-light bg-light sticky-top px-3">
     <div class="container-fluid">
-      <a href="index.html" class="navbar-brand">git_wiki</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a href="#start" class="nav-link">Start</a>
-              </li>
+      <a class="navbar-brand section" href="#">git_wiki</a>
+        <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a href="#whwhwh" class="nav-link">Wh, wh and wh?</a>
+            <a class="nav-link active" aria-current="page" href="#start">Start</a>
           </li>
-          <li class="nav-item">
-            <a href="#design" class="nav-link">Design</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sections
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#whwhwh">Wh, wh and wh?</a></li>
+              <li><a class="dropdown-item" href="#design">Design</a></li>
+              <li><a class="dropdown-item" href="#workings">How it works</a></li>
+              <li><a class="dropdown-item" href="#additional">Terms and actions</a></li>
+              <li><a class="dropdown-item" href="#definitions">Definitions</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a href="#workings" class="nav-link">Workings</a>
-          </li>
-          <li class="nav-item">
-            <a href="#additional" class="nav-link">Additional</a>
-          </li>
-          <li class="nav-item">
-            <a href="#definitions" class="nav-link">Definitions</a>
-          </li>
-          </ul>
-        </div>
+        </ul>
       </div>
   </nav>
 
