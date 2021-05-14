@@ -9,8 +9,13 @@ html {
   margin: -70px 0 0;
 }
 
+.sticky-offset {
+  top: 70px;
+}
+
 nav {
   opacity: .97;
+  z-index: 1;
 }
 
 #start {
@@ -78,18 +83,15 @@ nav {
 }
 
 #workings-diagram {
+  z-index: 2;
+  width: 30%;
+  height: 80vh;
   border: 2px solid #000;
   border-radius: 5px;
-
-  margin: auto;
+  
   padding-left: 5px;
 
   background-color: #000;
-}
-
-#spacer {
-  width: 30%;
-  height: 80vh;
 }
 
 /*  REMOVES EXAMPLE ON SMALL SCREEN */
